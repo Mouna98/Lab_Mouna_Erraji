@@ -1,0 +1,4 @@
+mouna erraji, id: 0, soldi: 1000.000000 si è aggiunta alla banca
+
+mario rossi, id: 1, soldi: 15000.000000 si è aggiunta alla banca
+
