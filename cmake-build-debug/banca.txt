@@ -1,0 +1,8 @@
+mouna erraji, id: 0, soldi: 1000.000000 si è aggiunta alla banca
+
+NOME mouna COGNOME erraji, ID: 0, Ho Depositato 100.000000 soldi, Saldo Precedente 1000.000000 Saldo Dispobile 1100.000000
+
+NOME mouna COGNOME erraji,  ID: 0, Ho Prelevato 100.000000 soldi, Saldo Precedente 1100.000000 Saldo Disponibile1000.000000
+
+NOME mouna COGNOME erraji,  ID: 0, Ho Prelevato 300.000000 soldi, Saldo Precedente 1000.000000 Saldo Disponibile700.000000
+
