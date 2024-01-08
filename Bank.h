@@ -8,13 +8,16 @@
 #include <vector>
 #include <iostream>
 #include "Account.h"
+#include "Transaction.h"
 #include <fstream>
+#include <list>
 
 using namespace std;
 
 class Bank {
 public:
     std::vector<Account> accounts;
+
 
     std::ofstream bank_report;
     std::string bank_report_file_name = "banca.txt";
@@ -26,11 +29,13 @@ public:
     virtual ~Bank();
 
     void add_account(Account a);
+    void add_transaction(Transaction t);
 
 
-    void account_deposita(int id, float value);
 
-    void account_preleva(int id, float value);
+    void account_deposita(string id, double m);
+
+    void account_preleva(string id,double m);
 
 
 };

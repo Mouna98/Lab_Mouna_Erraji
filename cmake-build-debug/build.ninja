@@ -51,7 +51,7 @@ build cmake_object_order_depends_target_Lab_Mouna_Erraji: phony || cmake_object_
 
 build CMakeFiles/Lab_Mouna_Erraji.dir/main.cpp.o: CXX_COMPILER__Lab_Mouna_Erraji_unscanned_Debug /Users/mou/CLionProjects/Lab_Mouna_Erraji/main.cpp || cmake_object_order_depends_target_Lab_Mouna_Erraji
   DEP_FILE = CMakeFiles/Lab_Mouna_Erraji.dir/main.cpp.o.d
-  FLAGS = -g -std=gnu++17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fcolor-diagnostics
+  FLAGS = -g -std=gnu++17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/Lab_Mouna_Erraji.dir
   OBJECT_FILE_DIR = CMakeFiles/Lab_Mouna_Erraji.dir
 
@@ -64,7 +64,7 @@ build CMakeFiles/Lab_Mouna_Erraji.dir/main.cpp.o: CXX_COMPILER__Lab_Mouna_Erraji
 # Link the executable Lab_Mouna_Erraji
 
 build Lab_Mouna_Erraji: CXX_EXECUTABLE_LINKER__Lab_Mouna_Erraji_Debug CMakeFiles/Lab_Mouna_Erraji.dir/main.cpp.o | libcore.a || libcore.a
-  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk
+  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk
   LINK_LIBRARIES = libcore.a
   OBJECT_DIR = CMakeFiles/Lab_Mouna_Erraji.dir
   POST_BUILD = :
@@ -83,13 +83,19 @@ build cmake_object_order_depends_target_core: phony || CMakeFiles/core.dir
 
 build CMakeFiles/core.dir/Account.cpp.o: CXX_COMPILER__core_unscanned_Debug /Users/mou/CLionProjects/Lab_Mouna_Erraji/Account.cpp || cmake_object_order_depends_target_core
   DEP_FILE = CMakeFiles/core.dir/Account.cpp.o.d
-  FLAGS = -g -std=gnu++17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fcolor-diagnostics
+  FLAGS = -g -std=gnu++17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/core.dir
   OBJECT_FILE_DIR = CMakeFiles/core.dir
 
 build CMakeFiles/core.dir/Bank.cpp.o: CXX_COMPILER__core_unscanned_Debug /Users/mou/CLionProjects/Lab_Mouna_Erraji/Bank.cpp || cmake_object_order_depends_target_core
   DEP_FILE = CMakeFiles/core.dir/Bank.cpp.o.d
-  FLAGS = -g -std=gnu++17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fcolor-diagnostics
+  FLAGS = -g -std=gnu++17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/core.dir
+  OBJECT_FILE_DIR = CMakeFiles/core.dir
+
+build CMakeFiles/core.dir/Transaction.cpp.o: CXX_COMPILER__core_unscanned_Debug /Users/mou/CLionProjects/Lab_Mouna_Erraji/Transaction.cpp || cmake_object_order_depends_target_core
+  DEP_FILE = CMakeFiles/core.dir/Transaction.cpp.o.d
+  FLAGS = -g -std=gnu++17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/core.dir
   OBJECT_FILE_DIR = CMakeFiles/core.dir
 
@@ -101,8 +107,8 @@ build CMakeFiles/core.dir/Bank.cpp.o: CXX_COMPILER__core_unscanned_Debug /Users/
 #############################################
 # Link the static library libcore.a
 
-build libcore.a: CXX_STATIC_LIBRARY_LINKER__core_Debug CMakeFiles/core.dir/Account.cpp.o CMakeFiles/core.dir/Bank.cpp.o
-  ARCH_FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk
+build libcore.a: CXX_STATIC_LIBRARY_LINKER__core_Debug CMakeFiles/core.dir/Account.cpp.o CMakeFiles/core.dir/Bank.cpp.o CMakeFiles/core.dir/Transaction.cpp.o
+  ARCH_FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = CMakeFiles/core.dir
   POST_BUILD = :
@@ -191,21 +197,21 @@ build cmake_object_order_depends_target_runTestBank: phony || cmake_object_order
 
 build Test/CMakeFiles/runTestBank.dir/runAllTests.cpp.o: CXX_COMPILER__runTestBank_unscanned_Debug /Users/mou/CLionProjects/Lab_Mouna_Erraji/Test/runAllTests.cpp || cmake_object_order_depends_target_runTestBank
   DEP_FILE = Test/CMakeFiles/runTestBank.dir/runAllTests.cpp.o.d
-  FLAGS = -g -std=gnu++14 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fcolor-diagnostics
+  FLAGS = -g -std=gnu++14 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
   INCLUDES = -isystem /Users/mou/CLionProjects/Lab_Mouna_Erraji/Test/lib/googletest/googletest/include -isystem /Users/mou/CLionProjects/Lab_Mouna_Erraji/Test/lib/googletest/googletest
   OBJECT_DIR = Test/CMakeFiles/runTestBank.dir
   OBJECT_FILE_DIR = Test/CMakeFiles/runTestBank.dir
 
 build Test/CMakeFiles/runTestBank.dir/TestAccount.cpp.o: CXX_COMPILER__runTestBank_unscanned_Debug /Users/mou/CLionProjects/Lab_Mouna_Erraji/Test/TestAccount.cpp || cmake_object_order_depends_target_runTestBank
   DEP_FILE = Test/CMakeFiles/runTestBank.dir/TestAccount.cpp.o.d
-  FLAGS = -g -std=gnu++14 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fcolor-diagnostics
+  FLAGS = -g -std=gnu++14 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
   INCLUDES = -isystem /Users/mou/CLionProjects/Lab_Mouna_Erraji/Test/lib/googletest/googletest/include -isystem /Users/mou/CLionProjects/Lab_Mouna_Erraji/Test/lib/googletest/googletest
   OBJECT_DIR = Test/CMakeFiles/runTestBank.dir
   OBJECT_FILE_DIR = Test/CMakeFiles/runTestBank.dir
 
 build Test/CMakeFiles/runTestBank.dir/TestBank.cpp.o: CXX_COMPILER__runTestBank_unscanned_Debug /Users/mou/CLionProjects/Lab_Mouna_Erraji/Test/TestBank.cpp || cmake_object_order_depends_target_runTestBank
   DEP_FILE = Test/CMakeFiles/runTestBank.dir/TestBank.cpp.o.d
-  FLAGS = -g -std=gnu++14 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fcolor-diagnostics
+  FLAGS = -g -std=gnu++14 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
   INCLUDES = -isystem /Users/mou/CLionProjects/Lab_Mouna_Erraji/Test/lib/googletest/googletest/include -isystem /Users/mou/CLionProjects/Lab_Mouna_Erraji/Test/lib/googletest/googletest
   OBJECT_DIR = Test/CMakeFiles/runTestBank.dir
   OBJECT_FILE_DIR = Test/CMakeFiles/runTestBank.dir
@@ -219,7 +225,7 @@ build Test/CMakeFiles/runTestBank.dir/TestBank.cpp.o: CXX_COMPILER__runTestBank_
 # Link the executable Test/runTestBank
 
 build Test/runTestBank: CXX_EXECUTABLE_LINKER__runTestBank_Debug Test/CMakeFiles/runTestBank.dir/runAllTests.cpp.o Test/CMakeFiles/runTestBank.dir/TestAccount.cpp.o Test/CMakeFiles/runTestBank.dir/TestBank.cpp.o | lib/libgtest.a lib/libgtest_main.a libcore.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a libcore.a
-  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk
+  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk
   LINK_LIBRARIES = lib/libgtest.a  lib/libgtest_main.a  libcore.a  lib/libgtest.a
   OBJECT_DIR = Test/CMakeFiles/runTestBank.dir
   POST_BUILD = :
@@ -378,7 +384,7 @@ build cmake_object_order_depends_target_gmock: phony || cmake_object_order_depen
 
 build Test/lib/googletest/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o: CXX_COMPILER__gmock_unscanned_Debug /Users/mou/CLionProjects/Lab_Mouna_Erraji/Test/lib/googletest/googlemock/src/gmock-all.cc || cmake_object_order_depends_target_gmock
   DEP_FILE = Test/lib/googletest/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o.d
-  FLAGS = -g -std=c++14 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fcolor-diagnostics  -DGTEST_HAS_PTHREAD=1
+  FLAGS = -g -std=c++14 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -fcolor-diagnostics  -DGTEST_HAS_PTHREAD=1
   INCLUDES = -I/Users/mou/CLionProjects/Lab_Mouna_Erraji/Test/lib/googletest/googlemock/include -I/Users/mou/CLionProjects/Lab_Mouna_Erraji/Test/lib/googletest/googlemock -isystem /Users/mou/CLionProjects/Lab_Mouna_Erraji/Test/lib/googletest/googletest/include -isystem /Users/mou/CLionProjects/Lab_Mouna_Erraji/Test/lib/googletest/googletest
   OBJECT_DIR = Test/lib/googletest/googlemock/CMakeFiles/gmock.dir
   OBJECT_FILE_DIR = Test/lib/googletest/googlemock/CMakeFiles/gmock.dir/src
@@ -392,7 +398,7 @@ build Test/lib/googletest/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o: CX
 # Link the static library lib/libgmock.a
 
 build lib/libgmock.a: CXX_STATIC_LIBRARY_LINKER__gmock_Debug Test/lib/googletest/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o || lib/libgtest.a
-  ARCH_FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk
+  ARCH_FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = Test/lib/googletest/googlemock/CMakeFiles/gmock.dir
   POST_BUILD = :
@@ -411,7 +417,7 @@ build cmake_object_order_depends_target_gmock_main: phony || cmake_object_order_
 
 build Test/lib/googletest/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o: CXX_COMPILER__gmock_main_unscanned_Debug /Users/mou/CLionProjects/Lab_Mouna_Erraji/Test/lib/googletest/googlemock/src/gmock_main.cc || cmake_object_order_depends_target_gmock_main
   DEP_FILE = Test/lib/googletest/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o.d
-  FLAGS = -g -std=c++14 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fcolor-diagnostics  -DGTEST_HAS_PTHREAD=1
+  FLAGS = -g -std=c++14 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -fcolor-diagnostics  -DGTEST_HAS_PTHREAD=1
   INCLUDES = -isystem /Users/mou/CLionProjects/Lab_Mouna_Erraji/Test/lib/googletest/googlemock/include -isystem /Users/mou/CLionProjects/Lab_Mouna_Erraji/Test/lib/googletest/googlemock -isystem /Users/mou/CLionProjects/Lab_Mouna_Erraji/Test/lib/googletest/googletest/include -isystem /Users/mou/CLionProjects/Lab_Mouna_Erraji/Test/lib/googletest/googletest
   OBJECT_DIR = Test/lib/googletest/googlemock/CMakeFiles/gmock_main.dir
   OBJECT_FILE_DIR = Test/lib/googletest/googlemock/CMakeFiles/gmock_main.dir/src
@@ -425,7 +431,7 @@ build Test/lib/googletest/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc
 # Link the static library lib/libgmock_main.a
 
 build lib/libgmock_main.a: CXX_STATIC_LIBRARY_LINKER__gmock_main_Debug Test/lib/googletest/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o || lib/libgmock.a lib/libgtest.a
-  ARCH_FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk
+  ARCH_FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = Test/lib/googletest/googlemock/CMakeFiles/gmock_main.dir
   POST_BUILD = :
@@ -514,7 +520,7 @@ build cmake_object_order_depends_target_gtest: phony || Test/lib/googletest/goog
 
 build Test/lib/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o: CXX_COMPILER__gtest_unscanned_Debug /Users/mou/CLionProjects/Lab_Mouna_Erraji/Test/lib/googletest/googletest/src/gtest-all.cc || cmake_object_order_depends_target_gtest
   DEP_FILE = Test/lib/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o.d
-  FLAGS = -g -std=c++14 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fcolor-diagnostics  -DGTEST_HAS_PTHREAD=1
+  FLAGS = -g -std=c++14 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -fcolor-diagnostics  -DGTEST_HAS_PTHREAD=1
   INCLUDES = -I/Users/mou/CLionProjects/Lab_Mouna_Erraji/Test/lib/googletest/googletest/include -I/Users/mou/CLionProjects/Lab_Mouna_Erraji/Test/lib/googletest/googletest
   OBJECT_DIR = Test/lib/googletest/googletest/CMakeFiles/gtest.dir
   OBJECT_FILE_DIR = Test/lib/googletest/googletest/CMakeFiles/gtest.dir/src
@@ -528,7 +534,7 @@ build Test/lib/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o: CX
 # Link the static library lib/libgtest.a
 
 build lib/libgtest.a: CXX_STATIC_LIBRARY_LINKER__gtest_Debug Test/lib/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
-  ARCH_FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk
+  ARCH_FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = Test/lib/googletest/googletest/CMakeFiles/gtest.dir
   POST_BUILD = :
@@ -547,7 +553,7 @@ build cmake_object_order_depends_target_gtest_main: phony || cmake_object_order_
 
 build Test/lib/googletest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o: CXX_COMPILER__gtest_main_unscanned_Debug /Users/mou/CLionProjects/Lab_Mouna_Erraji/Test/lib/googletest/googletest/src/gtest_main.cc || cmake_object_order_depends_target_gtest_main
   DEP_FILE = Test/lib/googletest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o.d
-  FLAGS = -g -std=c++14 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fcolor-diagnostics  -DGTEST_HAS_PTHREAD=1
+  FLAGS = -g -std=c++14 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -fcolor-diagnostics  -DGTEST_HAS_PTHREAD=1
   INCLUDES = -isystem /Users/mou/CLionProjects/Lab_Mouna_Erraji/Test/lib/googletest/googletest/include -isystem /Users/mou/CLionProjects/Lab_Mouna_Erraji/Test/lib/googletest/googletest
   OBJECT_DIR = Test/lib/googletest/googletest/CMakeFiles/gtest_main.dir
   OBJECT_FILE_DIR = Test/lib/googletest/googletest/CMakeFiles/gtest_main.dir/src
@@ -561,7 +567,7 @@ build Test/lib/googletest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc
 # Link the static library lib/libgtest_main.a
 
 build lib/libgtest_main.a: CXX_STATIC_LIBRARY_LINKER__gtest_main_Debug Test/lib/googletest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o || lib/libgtest.a
-  ARCH_FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk
+  ARCH_FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = Test/lib/googletest/googletest/CMakeFiles/gtest_main.dir
   POST_BUILD = :

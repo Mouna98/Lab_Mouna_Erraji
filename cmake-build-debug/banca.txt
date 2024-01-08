@@ -1,12 +1,6 @@
-mouna erraji, id: 0, soldi: 1000.000000 si è aggiunta alla banca
+mouna erraji, id: 0, soldi: 100.000000 si è aggiunta alla banca
 
-Mario Rossi , id: 1, soldi: 100.000000 si è aggiunta alla banca
+mario rossi, id: 1, soldi: 100.000000 si è aggiunta alla banca
 
-NOME mouna COGNOME erraji, ID: 0, Ho Depositato 100.000000 soldi, Saldo Precedente 1000.000000 Saldo Dispobile 1100.000000
-
-NOME mouna COGNOME erraji,  ID: 0, Ho Prelevato 100.000000 soldi, Saldo Precedente 1100.000000 Saldo Disponibile1000.000000
-
-NOME mouna COGNOME erraji,  ID: 0, Ho Prelevato 300.000000 soldi, Saldo Precedente 1000.000000 Saldo Disponibile700.000000
-
-NOME mouna COGNOME erraji, ID: 0, Ho Depositato 300.000000 soldi, Saldo Precedente 700.000000 Saldo Dispobile 1000.000000
+Transaction from mouna erraji to mario rossi of 10.000000€  in dataMon Jan  8 18:23:37 2024
 

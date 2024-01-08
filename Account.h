@@ -8,52 +8,43 @@
 
 #include <string>
 #include <iostream>
+#include "Transaction.h"
+#include <list>
 
+class Transaction;
 using namespace std;
 
 
 class Account {
 public:
 
-public:
+    Account(const std::string n, const std::string s, string i, double m);
 
-    std::string nome, cognome; //dichiarazione di due stringhe in stile C++ senza inizializzazione
-    int id;
-    float soldi_conto;
+    void preleva(double m);
 
-    Account(int id, float money) : id(id), soldi_conto(money) {
-        nome = "Mario";
-        cognome = "Rossi ";
-        std::string ret = "Nome  e Cognome Utente " + nome + " " + cognome + ", id: " + std::to_string(id) + ", conto: " +
-                          std::to_string(money);
-        std::cout << ret << "\n\n";
-    }
+    void deposita(double m);
 
-    Account(const std::string &nome, const std::string &cognome, int id, float money);
+    void insertTransaction(Transaction t);
 
-    std::string preleva(float value);
-
-    std::string deposita(float value);
 
     std::string join();
 
-    const std::string &getNome() const;
 
-    const std::string &getCognome() const;
+    const string getId();
 
-    int getId() const;
+    const string getName() const;
 
-    int setId(int id);
+    const string getSurname() const;
 
-    float getMoney() const;
+    const double getMoney() const;
 
-    void setMoney(float money);
+private:
+    string id;
+    double money;
 
-    float getSoldiConto() const;
-
-    void setNome(const string &nome);
-
-
+    list<Transaction> transactions;
+    string name;
+    string surname;
 };
 
 

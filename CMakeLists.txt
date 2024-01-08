@@ -5,7 +5,8 @@ add_subdirectory(Test)
 
 set(CMAKE_CXX_STANDARD 17)
 
-set(SOURCE_FILES Account.h Account.cpp  Bank.h Bank.cpp)
+set(SOURCE_FILES Account.h Account.cpp  Bank.h Bank.cpp Transaction.h Transaction.cpp
+)
 
 add_executable(Lab_Mouna_Erraji main.cpp)
 
