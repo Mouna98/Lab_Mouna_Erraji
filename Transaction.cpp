@@ -19,8 +19,8 @@ Transaction::Transaction(Account& p, Account& b, double a){
 
 
 std::string Transaction::print() {
-    string ret= "Transaction from " +payer->getName()+" "+ payer->getSurname() + " to " +beneficiary->getName()+" "+beneficiary->getSurname()+
-                 + " of " +std::to_string(std::round(getAmount() * 100.0) / 100.0) + "€ " + " in data" + std::ctime(&date)+ "\n";
+    string ret= "Transazione da " +payer->getName()+" "+ payer->getSurname() + " a " +beneficiary->getName()+" "+beneficiary->getSurname()+
+                 + " di " +std::to_string(std::round(getAmount() * 100.0) / 100.0) + "€ in data\n" + std::ctime(&date)+ "\n";
 
     return ret;
 }
