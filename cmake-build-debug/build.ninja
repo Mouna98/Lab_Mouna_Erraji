@@ -216,6 +216,13 @@ build Test/CMakeFiles/runTestBank.dir/TestBank.cpp.o: CXX_COMPILER__runTestBank_
   OBJECT_DIR = Test/CMakeFiles/runTestBank.dir
   OBJECT_FILE_DIR = Test/CMakeFiles/runTestBank.dir
 
+build Test/CMakeFiles/runTestBank.dir/TestTransaction.cpp.o: CXX_COMPILER__runTestBank_unscanned_Debug /Users/mou/CLionProjects/Lab_Mouna_Erraji/Test/TestTransaction.cpp || cmake_object_order_depends_target_runTestBank
+  DEP_FILE = Test/CMakeFiles/runTestBank.dir/TestTransaction.cpp.o.d
+  FLAGS = -g -std=gnu++14 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
+  INCLUDES = -isystem /Users/mou/CLionProjects/Lab_Mouna_Erraji/Test/lib/googletest/googletest/include -isystem /Users/mou/CLionProjects/Lab_Mouna_Erraji/Test/lib/googletest/googletest
+  OBJECT_DIR = Test/CMakeFiles/runTestBank.dir
+  OBJECT_FILE_DIR = Test/CMakeFiles/runTestBank.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target runTestBank
@@ -224,7 +231,7 @@ build Test/CMakeFiles/runTestBank.dir/TestBank.cpp.o: CXX_COMPILER__runTestBank_
 #############################################
 # Link the executable Test/runTestBank
 
-build Test/runTestBank: CXX_EXECUTABLE_LINKER__runTestBank_Debug Test/CMakeFiles/runTestBank.dir/runAllTests.cpp.o Test/CMakeFiles/runTestBank.dir/TestAccount.cpp.o Test/CMakeFiles/runTestBank.dir/TestBank.cpp.o | lib/libgtest.a lib/libgtest_main.a libcore.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a libcore.a
+build Test/runTestBank: CXX_EXECUTABLE_LINKER__runTestBank_Debug Test/CMakeFiles/runTestBank.dir/runAllTests.cpp.o Test/CMakeFiles/runTestBank.dir/TestAccount.cpp.o Test/CMakeFiles/runTestBank.dir/TestBank.cpp.o Test/CMakeFiles/runTestBank.dir/TestTransaction.cpp.o | lib/libgtest.a lib/libgtest_main.a libcore.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a libcore.a
   FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk
   LINK_LIBRARIES = lib/libgtest.a  lib/libgtest_main.a  libcore.a  lib/libgtest.a
   OBJECT_DIR = Test/CMakeFiles/runTestBank.dir

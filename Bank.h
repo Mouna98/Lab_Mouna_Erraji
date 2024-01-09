@@ -31,6 +31,7 @@ public:
     void add_account(Account a);
     void add_transaction(Transaction t);
 
+    vector<Account> &getAccounts();
 
 
     void account_deposita(string id, double m);

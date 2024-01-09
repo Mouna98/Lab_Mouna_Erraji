@@ -29,6 +29,10 @@ Bank::~Bank() {
     bank_report.close();
 }
 
+vector<Account> &Bank::getAccounts() {
+    return accounts;
+}
+
 /*void Bank::account_deposita(int id, float m) {
     for (auto i = accounts.begin(); i != accounts.end(); ++i) {
         if (i->getId() == id) {

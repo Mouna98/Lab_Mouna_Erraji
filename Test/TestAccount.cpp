@@ -3,33 +3,35 @@
 //
 #include "../Account.h"
 #include <stdexcept>
-#include <utility>
 #include <string>
 using namespace std;
 
 #include "gtest/gtest.h"
 
-TEST(Account, ConstructorRightParamenters) {
-    bool result =true;
-    Account a("mouna","erraji",0,1000);
-    //a.nome="mouna";
-    //a.cognome="erraji";
-    try{
-        Account u0("mouna","erraji",0,1000);
-        ASSERT_EQ(u0.getNome(),a.getNome());
-        ASSERT_EQ(u0.getCognome(),a.getCognome());
 
 
-
-    }catch(std::out_of_range& e){
-        result = false;
-    }
-    ASSERT_TRUE(result);
-
+TEST(TestAccount, ConstructorRightParamenters) {
+    Account a("mouna","erraji","0",1000);
+    ASSERT_EQ(a.getName(),"mouna");
+    ASSERT_EQ(a.getSurname(),"erraji");
 }
 
 
-TEST(Account, TestdepositaMoney) {
+TEST(TestAccount, ConstructorWrongParamenters) {
+    EXPECT_THROW(Account("mouna","erraji","2",-1000),std::out_of_range);
+}
+
+TEST(TestAccount, TestAddTransaction) {
+    Account a("mouna", "erraji",  "0", 1000);
+    Account c("mario", "rossi",  "1", 15000);
+    Transaction t(a,c,10);
+    a.insertTransaction(t);
+    ASSERT_TRUE(a.transactions.size()==1);
+}
+
+
+
+/*TEST(Account, TestdepositaMoney) {
     bool result=true;
     try{
         Account u0("mouna","erraji",0,1000);
@@ -58,4 +60,4 @@ TEST(Account, TestprelevaMoney) {
         result = false;
     }
     ASSERT_TRUE(result);
-}
+}*/

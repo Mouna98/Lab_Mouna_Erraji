@@ -10,7 +10,7 @@
 int main() {
 
         cout<<"\n BANK MANAGEMENT SISTEM....\n";
-        cout<<"\n......Welcome Back.......\n";
+        cout<<"\n........Welcome.......\n";
 
         Bank bank;
         Account u0("mouna", "erraji", "0", 100);

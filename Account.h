@@ -26,6 +26,7 @@ public:
 
     void insertTransaction(Transaction t);
 
+    list<Transaction> transactions;
 
     std::string join();
 
@@ -36,13 +37,16 @@ public:
 
     const string getSurname() const;
 
-    const double getMoney() const;
+    const double getMoney() const ;
+
+    list<Transaction> &getTransactions();
+
 
 private:
     string id;
     double money;
 
-    list<Transaction> transactions;
+    //list<Transaction> transactions;
     string name;
     string surname;
 };

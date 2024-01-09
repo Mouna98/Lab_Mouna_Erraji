@@ -51,8 +51,13 @@ const string Account::getSurname() const {
     return surname;
 }
 
-const double Account::getMoney() const{
+const double Account::getMoney() const {
     return money;
 }
+
+list<Transaction> &Account::getTransactions()  {
+    return transactions;
+}
+
 
 
