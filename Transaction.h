@@ -18,19 +18,19 @@ class Account;
 class Transaction {
     public:
 
-        Transaction(Account& p, Account& b, double a);
+        Transaction(Account& p, Account& b, double a,string t);
 
-        std::string print();
+        string getDescription();
 
 
 
-        const double getAmount() const {
+        const double getAmount(){
             return amount;
         }
 
-          Account getPayer();
+        const Account& getPayer();
 
-          Account getBeneficiary();
+        const Account& getBeneficiary();
 
 
     private:
@@ -38,6 +38,8 @@ class Transaction {
         Account *payer;
         Account *beneficiary;
         time_t date;
+        string description;
+        string type;
 
 };
 

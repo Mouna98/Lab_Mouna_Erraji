@@ -20,33 +20,32 @@ public:
 
     Account(string n,string s, string i, double m);
 
-    void preleva(double m);
 
-    void deposita(double m);
+
 
     void insertTransaction(Transaction t);
 
-    list<Transaction> transactions;
+
 
     std::string join();
 
 
-    const string getId();
+    string getId();
 
-    const string getName() const;
+    string getName() ;
 
-    const string getSurname() const;
+    string getSurname() ;
 
     double getMoney();
 
-    //list<Transaction> &getTransactions();
+    int getTransactions();
 
+    friend Transaction;// in modo che solo la classe transaction possa modificare l'importo degli account.
 
 private:
     string id;
     double money;
-
-    //list<Transaction> transactions;
+    list<Transaction> transactions;
     string name;
     string surname;
 };

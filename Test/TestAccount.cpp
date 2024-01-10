@@ -26,38 +26,8 @@ TEST(TestAccount, TestAddTransaction) {
     Account c("mario", "rossi",  "1", 15000);
     Transaction t(a,c,10);
     a.insertTransaction(t);
-    ASSERT_TRUE(a.transactions.size()==1);
+    ASSERT_TRUE(a.getTransactions()==1);
 }
 
 
 
-/*TEST(Account, TestdepositaMoney) {
-    bool result=true;
-    try{
-        Account u0("mouna","erraji",0,1000);
-        u0.deposita(10);
-        ASSERT_EQ(u0.getMoney(),1010);
-
-
-    }catch(std::out_of_range& e){
-        result = false;
-    }
-    ASSERT_TRUE(result);
-
-
-}
-
-
-TEST(Account, TestprelevaMoney) {
-    bool result=true;
-    try{
-        Account u0("mouna","erraji",0,1000);
-        u0.preleva(10);
-        ASSERT_EQ(u0.getMoney(),990);
-
-
-    }catch(std::out_of_range& e){
-        result = false;
-    }
-    ASSERT_TRUE(result);
-}*/

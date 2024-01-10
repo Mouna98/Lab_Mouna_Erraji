@@ -16,22 +16,15 @@ std::string Account::join() {
     return ret;
 }
 
-Account::Account(const std::string n, const std::string s, string i, double m) :name(n),surname(s),id(i) {
+Account::Account(string n, string s, string i, double m) :name(n),surname(s),id(i) {
     if(m >= 0){
             money = m;
         }else{
-            throw std::out_of_range("Errore importo iniziale negativo");
+            throw out_of_range("Errore importo iniziale negativo");
         }
     }
 
 
-void Account::deposita(double m) {
-   money += m;
-}
-
-void Account::preleva(double m) {
-    money -= m;
-}
 
 void  Account::insertTransaction(Transaction t) {
         transactions.push_back(t);
@@ -39,24 +32,24 @@ void  Account::insertTransaction(Transaction t) {
 }
 
 
-const string Account::getId() {
+ string Account::getId() {
     return id;
 }
 
-const string Account::getName() const {
+ string Account::getName(){
     return name;
 }
 
-const string Account::getSurname() const {
+string Account::getSurname(){
     return surname;
 }
 
-const double Account::getMoney() const {
+double Account::getMoney(){
     return money;
 }
 
-list<Transaction> &Account::getTransactions()  {
-    return transactions;
+int Account::getTransactions() {
+    return transactions.size();
 }
 
 

@@ -23,5 +23,5 @@ TEST(TestTransaction, ConstructorRightParamenters) {
 TEST(TestTransaction,ConstructorWrongParameters) {
     Account a("mouna","erraji","0",10);
     Account b("mario","rossi","1",5);
-    EXPECT_THROW(Transaction(a,b,-1),std::out_of_range);
+    EXPECT_THROW(Transaction(a,b,-1,"b"),std::out_of_range);
 }
