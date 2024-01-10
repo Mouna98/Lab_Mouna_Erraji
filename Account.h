@@ -18,7 +18,7 @@ using namespace std;
 class Account {
 public:
 
-    Account(const std::string n, const std::string s, string i, double m);
+    Account(string n,string s, string i, double m);
 
     void preleva(double m);
 
@@ -37,9 +37,9 @@ public:
 
     const string getSurname() const;
 
-    const double getMoney() const ;
+    double getMoney();
 
-    list<Transaction> &getTransactions();
+    //list<Transaction> &getTransactions();
 
 
 private:
