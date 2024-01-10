@@ -15,11 +15,11 @@ Transaction::Transaction(Account& p, Account& b, double a,string t){
     date=std::time(nullptr);
     if(t=="p" && a<=p.money){
         p.money-=amount;
-        description="Prelievo effettuato da "+ payer->getName()+""+payer->getSurname()+" di importo "+ std::to_string(std::round(getAmount() * 100.0) / 100.0)+
+        description="Prelievo effettuato da "+ payer->getName()+" "+payer->getSurname()+" di importo "+ std::to_string(std::round(getAmount() * 100.0) / 100.0)+
                 "€ in data\n" + std::ctime(&date)+ "\n";
     }else if (t=="d"){
         p.money+=amount;
-        description="Deposito effettuato da "+ payer->getName()+""+payer->getSurname()+" di importo "+ std::to_string(std::round(getAmount() * 100.0) / 100.0)+
+        description="Deposito effettuato da "+ payer->getName()+" "+payer->getSurname()+" di importo "+ std::to_string(std::round(getAmount() * 100.0) / 100.0)+
                     "€ in data\n" + std::ctime(&date)+ "\n";
 
     }else if(t=="b"&& a<=p.money){

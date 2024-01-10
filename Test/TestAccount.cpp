@@ -24,7 +24,7 @@ TEST(TestAccount, ConstructorWrongParamenters) {
 TEST(TestAccount, TestAddTransaction) {
     Account a("mouna", "erraji",  "0", 1000);
     Account c("mario", "rossi",  "1", 15000);
-    Transaction t(a,c,10);
+    Transaction t(a,c,10,"b");
     a.insertTransaction(t);
     ASSERT_TRUE(a.getTransactions()==1);
 }

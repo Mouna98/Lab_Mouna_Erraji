@@ -13,7 +13,7 @@ using namespace std;
 TEST(TestTransaction, ConstructorRightParamenters) {
     Account a("mouna","erraji","0",10);
     Account b("mario","rossi","1",5);
-    Transaction t(a,b,1);
+    Transaction t(a,b,1,"b");
     ASSERT_EQ(a.getMoney(),9);
     ASSERT_EQ(b.getMoney(),6);
     ASSERT_EQ(t.getAmount(),1);

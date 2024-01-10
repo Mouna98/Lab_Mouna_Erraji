@@ -9,7 +9,7 @@ using namespace std;
 
 class Bank;
 
-std::string Account::join() {
+string Account::join() {
     std::string ret = name + " " + surname + ", id: " + id + ", soldi: " + std::to_string(money) +
                       " si è aggiunta alla banca" + "\n\n";
 

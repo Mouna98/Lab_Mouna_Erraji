@@ -27,7 +27,7 @@ public:
 
 
 
-    std::string join();
+    string join();
 
 
     string getId();
