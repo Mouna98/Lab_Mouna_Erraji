@@ -1,7 +1,0 @@
-mouna erraji, id: 0, soldi: 100.000000 si è aggiunta alla banca
-
-mario rossi, id: 1, soldi: 100.000000 si è aggiunta alla banca
-
-Transazione da mouna erraji a mario rossi di 10.000000€ in data
-Tue Jan  9 16:51:06 2024
-
