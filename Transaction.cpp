@@ -10,7 +10,7 @@ Transaction::Transaction(Account& p, Account& b, double a){
     if(a > 0){
         amount = a;
     }else{
-        throw std::out_of_range("Error amount negative");
+        throw std::out_of_range("Errore iniziale negativo");
     }
     p.preleva(amount);
     b.deposita(amount);
