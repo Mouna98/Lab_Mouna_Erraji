@@ -25,9 +25,8 @@ public:
         return amount;
     }
 
-    Account& getPayer() const;
-
-    Account& getBeneficiary() const;
+    const Account& getPayer() const;
+    const Account& getBeneficiary() const;
 
 private:
     double amount;

@@ -35,12 +35,12 @@ string Transaction::getDescription() const {
     return description;
 }
 
-Account& Transaction::getPayer() const {
+const Account& Transaction::getPayer() const {
     std::string result = payer->getName(); + " " + payer->getSurname();
     return *payer;
 }
 
-Account& Transaction::getBeneficiary() const {
+const Account& Transaction::getBeneficiary() const {
     std::string result = beneficiary->getName()+ " " + beneficiary->getSurname();
     return *beneficiary;
 }
