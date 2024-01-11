@@ -16,30 +16,26 @@ using namespace std;
 class Account;
 
 class Transaction {
-    public:
+public:
+    Transaction(Account& p, Account& b, double a,string t);
 
-        Transaction(Account& p, Account& b, double a,string t);
+    string getDescription() const;
 
-        string getDescription();
+    const double getAmount(){
+        return amount;
+    }
 
+    Account& getPayer() const;
 
+    Account& getBeneficiary() const;
 
-        const double getAmount(){
-            return amount;
-        }
-
-        const Account& getPayer();
-
-        const Account& getBeneficiary();
-
-
-    private:
-        double amount;
-        Account *payer;
-        Account *beneficiary;
-        time_t date;
-        string description;
-        string type;
+private:
+    double amount;
+    Account *payer;
+    Account *beneficiary;
+    time_t date;
+    string description;
+    string type;
 
 };
 

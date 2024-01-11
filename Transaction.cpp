@@ -16,32 +16,31 @@ Transaction::Transaction(Account& p, Account& b, double a,string t){
     if(t=="p" && a<=p.money){
         p.money-=amount;
         description="Prelievo effettuato da "+ payer->getName()+" "+payer->getSurname()+" di importo "+ std::to_string(std::round(getAmount() * 100.0) / 100.0)+
-                "€ in data\n" + std::ctime(&date)+ "\n";
+                " € in data " + std::ctime(&date)+ "\n";
     }else if (t=="d"){
         p.money+=amount;
-        description="Deposito effettuato da "+ payer->getName()+" "+payer->getSurname()+" di importo "+ std::to_string(std::round(getAmount() * 100.0) / 100.0)+
-                    "€ in data\n" + std::ctime(&date)+ "\n";
+        description="Deposito effettuato da "+ payer->getName()+" "+payer->getSurname()+" di importo "+std::to_string(std::round(getAmount() * 100.0) / 100.0)+
+                    " € in data " + std::ctime(&date)+ "\n";
 
     }else if(t=="b"&& a<=p.money){
         p.money-=amount;
         b.money+=amount;
         description= "Transazione da " +payer->getName()+" "+ payer->getSurname() + " a " +beneficiary->getName()+" "+beneficiary->getSurname()+
-                     + " di " +std::to_string(std::round(getAmount() * 100.0) / 100.0) + "€ in data\n" + std::ctime(&date)+ "\n";
+                     + " di " +std::to_string(std::round(getAmount() * 100.0) / 100.0) + " € in data " + std::ctime(&date)+ "\n";
     }
 
 }
 
-
-string Transaction::getDescription() {
+string Transaction::getDescription() const {
     return description;
 }
 
-const Account& Transaction::getPayer()  {
+Account& Transaction::getPayer() const {
     std::string result = payer->getName(); + " " + payer->getSurname();
     return *payer;
 }
 
-const Account& Transaction::getBeneficiary() {
+Account& Transaction::getBeneficiary() const {
     std::string result = beneficiary->getName()+ " " + beneficiary->getSurname();
     return *beneficiary;
 }

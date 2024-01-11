@@ -16,8 +16,8 @@
 
 TEST(TestBank, TestjoinBank) {
     Bank b;
-    Account a("mouna", "erraji",  "0", 1000);
-    Account c("mario", "rossi",  "1", 15000);
+    Account a("mouna", "erraji", 1000);
+    Account c("mario", "rossi", 15000);
     b.add_account(c);
    // b.add_account(a);
     EXPECT_TRUE(b.accounts.size()==1);

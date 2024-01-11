@@ -18,7 +18,6 @@ class Bank {
 public:
     std::vector<Account> accounts;
 
-
     std::ofstream bank_report;
     std::string bank_report_file_name = "banca.txt";
 
@@ -27,10 +26,8 @@ public:
     };
 
     virtual ~Bank();
-
-    void add_account(Account a);
-    void add_transaction(Transaction t);
-
+    void add_account(const Account& a);
+    void add_transaction(const Transaction& t);
 
 };
 

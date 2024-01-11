@@ -11,8 +11,8 @@ using namespace std;
 
 
 TEST(TestTransaction, ConstructorRightParamenters) {
-    Account a("mouna","erraji","0",10);
-    Account b("mario","rossi","1",5);
+    Account a("mouna","erraji",10);
+    Account b("mario","rossi",5);
     Transaction t(a,b,1,"b");
     ASSERT_EQ(a.getMoney(),9);
     ASSERT_EQ(b.getMoney(),6);
@@ -21,7 +21,7 @@ TEST(TestTransaction, ConstructorRightParamenters) {
 
 
 TEST(TestTransaction,ConstructorWrongParameters) {
-    Account a("mouna","erraji","0",10);
-    Account b("mario","rossi","1",5);
+    Account a("mouna","erraji",10);
+    Account b("mario","rossi",5);
     EXPECT_THROW(Transaction(a,b,-1,"b"),std::out_of_range);
 }

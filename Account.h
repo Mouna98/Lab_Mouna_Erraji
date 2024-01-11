@@ -17,33 +17,23 @@ using namespace std;
 
 class Account {
 public:
-
-    Account(string n,string s, string i, double m);
-
-
-
+    Account(const string& n,const string& s, double m);
 
     void insertTransaction(Transaction t);
 
+    string join() const;
 
+    const string &getName() const;
 
-    string join();
+    const string &getSurname() const;
 
+    double getMoney() const;
 
-    string getId();
-
-    string getName() ;
-
-    string getSurname() ;
-
-    double getMoney();
-
-    int getTransactions();
+    int getTransactions() const;
 
     friend Transaction;// in modo che solo la classe transaction possa modificare l'importo degli account.
 
 private:
-    string id;
     double money;
     list<Transaction> transactions;
     string name;

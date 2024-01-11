@@ -10,19 +10,17 @@
 
 class Transaction;
 
-void Bank::add_account(Account a) {
+void Bank::add_account(const Account& a) {
     accounts.push_back(a);
     bank_report << a.join();
-
 }
 
-void Bank::add_transaction(Transaction t) {
+void Bank::add_transaction(const Transaction& t) {
     Account a =t.getPayer();
     Account b=t.getBeneficiary();
     a.insertTransaction(t);
     b.insertTransaction(t);
     bank_report << t.getDescription();
-
 }
 
 Bank::~Bank() {
